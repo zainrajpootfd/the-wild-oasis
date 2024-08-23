@@ -60,7 +60,7 @@ function CabinRow({ cabin }) {
         queryKey: ["cabins"],
       });
     },
-    onError: (err) => toast.error("cabin could not be deleted"),
+    onError: () => toast.error("cabin could not be deleted"),
   });
   return (
     <TableRow role="row">
