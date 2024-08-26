@@ -34,7 +34,6 @@ export async function createCabin(newCabin) {
   if (error) {
     console.error(error);
     throw new Error("cabin could not be created");
-    // return data;
   }
   const { error: storageError } = await supabase.storage
     .from("cabin-images")
