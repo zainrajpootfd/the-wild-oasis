@@ -124,12 +124,12 @@ function BookingRow({
                 Check out
               </Menus.Button>
             )}
-            <Menus.Button
+            {/* <Menus.Button
               onClick={() => navigate(`/bookings/${bookingId}/edit`)}
               icon={<HiPencil />}
             >
               Edit
-            </Menus.Button>
+            </Menus.Button> */}
             <Modal.Open opens="delete">
               <Menus.Button icon={<HiTrash />}>Delete</Menus.Button>
             </Modal.Open>
